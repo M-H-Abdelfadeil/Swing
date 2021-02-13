@@ -1,9 +1,23 @@
 <?php
 namespace App\LIB;
-use App\LIB\CoreHandeler;
-class Core extends CoreHandeler{
+use App\Handler\CoreHandler;
+use App\Routes\Route;
+class Core extends CoreHandler{
+    private $data_route;
     public function __construct()
     {
-        $this->get_uri();
+       $uri=$this->get_uri();
+       $data_route=$this->get_data_route($uri);
+         
     }
+
+    private function get_data_route($uri){
+        $route=new Route;
+        return $route->route($uri);
+
+    }
+
+    
+
+
 }

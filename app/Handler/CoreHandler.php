@@ -1,6 +1,6 @@
 <?php
-namespace App\LIB;
-class CoreHandeler{
+namespace App\Handler;
+class CoreHandler{
 
    /***
     * uri => app.com/uri
@@ -12,4 +12,6 @@ class CoreHandeler{
 
      return $uri;
    }
+
+   
 }
