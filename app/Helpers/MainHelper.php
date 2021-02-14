@@ -19,7 +19,7 @@ function setDefaultEnv()
  * 
  */
 
- function view($view){
+ function view($view,$data=false){
 
     $view_file=path_app("View".DS.$view.".php");
     if(file_exists($view_file)){

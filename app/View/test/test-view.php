@@ -10,6 +10,10 @@
 </head>
 <body>
 <h1>test View</h1>
-
+<?php
+if($data){
+    var_dump($data);
+}
+?>
 </body>
 </html>

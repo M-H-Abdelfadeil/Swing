@@ -6,6 +6,7 @@ return
 
     //"route"=>"Class@function",
     "test/{id}"=>"App\Controller\TestController@test",
+    "/"=>"App\Controller\TestController@index",
 
 
 
