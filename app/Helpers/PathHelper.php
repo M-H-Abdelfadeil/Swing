@@ -7,7 +7,7 @@ function path_app($path=null){
 
 function path_public($path=null){
 
-    return $_SERVER['DOCUMENT_ROOT'].DS."public".DS.$path;
+    return env('DEFAULT_APP_URL').DS."public".DS.$path;
 }
 
 

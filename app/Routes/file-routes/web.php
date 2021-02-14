@@ -13,6 +13,7 @@ return
 
         /*
         ## Example Route Group
+        ## prefix => user/add 
         "1"=>[
             "namespace"=>"App\UserController",
             "prefix"=>"user",

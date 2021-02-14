@@ -21,7 +21,7 @@ function setDefaultEnv()
 
  function view($view){
 
-    $view_file=path_app("View".DS.$view.".pshp");
+    $view_file=path_app("View".DS.$view.".php");
     if(file_exists($view_file)){
         include($view_file);
     }else{
