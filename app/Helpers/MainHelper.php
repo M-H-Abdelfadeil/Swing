@@ -20,11 +20,13 @@ function setDefaultEnv()
  */
 
  function view($view){
-    $view_file=path_app("View".DS.$view.".txt");
+
+    $view_file=path_app("View".DS.$view.".pshp");
     if(file_exists($view_file)){
         include($view_file);
     }else{
-        return false;
+        $msg="This view <strong>' ".$view." ' </strong> does not exist";
+        return inc_error(500,$msg);
     }
     
  }
