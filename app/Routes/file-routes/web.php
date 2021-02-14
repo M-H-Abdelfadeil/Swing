@@ -2,29 +2,26 @@
 return
 
 [
+    // Example Route
 
-    "user/{id}/exam/{exam}"=>"App\Controller\UserController@test",
-    "test/test/{id}"=>"App\Controller\UserController@test_2",
-    "products/{id}"=>"App\Controller\UserController@test",
+    //"route"=>"Class@function",
+    "test/{id}"=>"App\Controller\TestController@test",
 
 
 
     "groups"=>[
 
+        /*
+        ## Example Route Group
         "1"=>[
-            "namespace"=>"App\Controller",
-            "prefix"=>"pre-test",
+            "namespace"=>"App\UserController",
+            "prefix"=>"user",
             "routes"=>[
-                "group/{id}/exam/{id_exam}"=>"UserController@test"
+                "add"=>"UserController@add"
             ]
         ],
-        "2"=>[
-            "namespace"=>"App\Controller\Main",
-            "routes"=>[
-                "group-2/{id}/test/{id}"=>"HomeController@test",
-                "test-2/group-2"=>"HomeController@test",
-            ]
-        ]
+
+        */
     ],
 
 ];

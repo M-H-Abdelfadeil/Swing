@@ -5,6 +5,3 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 setDefaultEnv();
 new App\LIB\Core;
-
-
-

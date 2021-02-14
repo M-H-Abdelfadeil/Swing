@@ -9,7 +9,8 @@
     ],
     "autoload": {
         "files":[
-            "app/Helpers/MainHelpers.php"
+            "app/Helpers/MainHelper.php",
+            "app/Helpers/PathHelper.php"
         ],
         "psr-4": {
             "App\\":"app/"
