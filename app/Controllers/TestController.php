@@ -1,6 +1,6 @@
 <?php
-namespace App\Controller;
-use App\Model\TestModel;
+namespace App\Controllers;
+use App\Models\TestModel;
 class TestController {
     
     public function test($id){

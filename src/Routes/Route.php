@@ -1,15 +1,15 @@
 <?php
-namespace App\Routes;
-use App\Handler\RouteHandler;
+namespace Src\Routes;
+use Src\Handler\RouteHandler;
 class Route extends RouteHandler{
 
      
 
     private  $set_routes=[
         // "path"
-        "web",
-        "dashboard"
-
+        "user",
+        "dashboard",
+        "api"
     ];
 
     private $all_routes=[];
@@ -20,14 +20,13 @@ class Route extends RouteHandler{
 
         foreach($this->set_routes as $route){
            
-            $file_routes=include("file-routes/".$route.".php");
-            $this->all_routes=array_merge($this->all_routes,$file_routes);
+            $routes=include("routes/".$route.".php");
+            
+            $this->all_routes=array_merge($this->all_routes,$routes);
            
         } 
        
 
         return $this->all_routes;
-    //    echo "<pre>";
-    //    print_r($this->routes);
     }
 }

@@ -5,8 +5,8 @@ return
     // Example Route
 
     //"route"=>"Class@function",
-    "test/{id}"=>"App\Controller\TestController@test",
-    "/"=>"App\Controller\TestController@index",
+    "test/{id}"=>"App\Controllers\TestController@test",
+    "/"=>"App\Controllers\TestController@index",
 
 
 

@@ -1,7 +1,7 @@
 <?php
-namespace App\LIB;
-use App\Handler\CoreHandler;
-use App\Routes\Route;
+namespace Src\LIB;
+use Src\Handler\CoreHandler;
+use Src\Routes\Route;
 class Core extends CoreHandler{
     private $uri;
     public function __construct()

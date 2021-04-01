@@ -21,7 +21,7 @@ function setDefaultEnv()
 
  function view($view,$data=false){
 
-    $view_file=path_app("View".DS.$view.".php");
+    $view_file=path_app("Views".DS.$view.".php");
     if(file_exists($view_file)){
         include($view_file);
     }else{
@@ -36,8 +36,8 @@ function setDefaultEnv()
  * 
  */
 
- function inc_error($status,$msg=false){
-    return include path_app()."ErrorsView".DS.$status.".php";
+function inc_error($status,$msg=false){
+    return include path_src()."ErrorsView".DS.$status.".php";
 }
 
 

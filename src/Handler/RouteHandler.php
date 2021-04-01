@@ -1,5 +1,5 @@
 <?php
-namespace App\Handler;
+namespace Src\Handler;
 
 class RouteHandler{
   private $routes;
